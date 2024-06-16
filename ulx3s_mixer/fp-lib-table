@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr "")(disabled))
+  (lib (name "mixer")(type "KiCad")(uri "${KIPRJMOD}/mixer.pretty")(options "")(descr ""))
+)
