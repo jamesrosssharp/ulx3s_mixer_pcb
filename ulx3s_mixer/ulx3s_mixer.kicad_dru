@@ -3,3 +3,7 @@
 (rule RF
    (constraint clearance (min 2mm))
    (condition "A.NetClass == 'RF' && B.Type == 'Zone'"))
+
+
+
+

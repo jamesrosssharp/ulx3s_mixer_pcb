@@ -57,7 +57,8 @@
       (copper_finish "None")
       (dielectric_constraints no)
     )
-    (pad_to_mask_clearance 0)
+    (pad_to_mask_clearance 0.22)
+    (solder_mask_min_width 0.22)
     (pcbplotparams
       (layerselection 0x00012fc_ffffffff)
       (disableapertmacros false)
@@ -89,7 +90,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "outputs/pick_and_place/")
+      (outputdirectory "outputs/drill")
     )
   )
 
@@ -3062,7 +3063,7 @@
     )
   )
 
-  (gr_arc (start 123.09 55.47) (mid 122.466216 54.492414) (end 123.097548 55.465142) (layer "F.SilkS") (width 0.15) (tstamp 68e9723c-9527-4b9f-be06-f836ae97eb84))
+  (gr_arc (start 123.09 55.47) (mid 122.466169 54.492444) (end 123.097548 55.465142) (layer "F.SilkS") (width 0.15) (tstamp 68e9723c-9527-4b9f-be06-f836ae97eb84))
   (gr_line (start 28.24 128.45) (end 28.24 185.66) (layer "Cmts.User") (width 0.1) (tstamp 04b1837f-8b9e-43ea-9557-7868ee170022))
   (gr_line (start 28.24 177.53) (end 150.897143 177.53) (layer "Cmts.User") (width 0.1) (tstamp 08a193db-a591-4f0a-a94d-60208311483d))
   (gr_line (start 85.325715 128.45) (end 85.325715 185.66) (layer "Cmts.User") (width 0.1) (tstamp 14ced5f3-4a80-4fe0-97b3-f09fa65bd6f5))
