@@ -1,0 +1,1498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/jrsharp/hardware/ULX3S_MIXER/ulx3s_mixer/ulx3s_mixer.kicad_sch</source>
+    <date>Sat 06 Jul 2024 12:36:48</date>
+    <tool>Eeschema 6.0.2+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ULX3S Mixer + 1-bit ADC PCB</title>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ulx3s_mixer.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>4.7pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RF18N4R7B500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="RF18N4R7B500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>59d2748f-0c97-4cc1-ae68-3227560e4bb2</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>4.7pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RF18N4R7B500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="RF18N4R7B500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b2632088-4eaa-4848-b644-33b5f32c1554</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">HH18N102J500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="HH18N102J500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7b9057d-cbc9-48ef-ad2a-ed0b69049817</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>220pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">885382206001</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="885382206001"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b711815-4fc8-4857-a3ef-afb9f8e87a68</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">HH18N102J500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="HH18N102J500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cabcf5e8-126f-42c3-b480-005f9853dca4</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">HH18N102J500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="HH18N102J500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>71d47d1c-d7f5-429a-8470-7f2bad1e8128</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">HH18N102J500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="HH18N102J500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6035ee0b-1e14-4e7e-b489-4140cc20ef07</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">CL32A106KOJNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="CL32A106KOJNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>16753064-6f08-4253-bab6-dfec60fa515d</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">C0603C104K8RACTU</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C0603C104K8RACTU"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a5ef6d3-3655-42d9-84d9-6b17ee9faee3</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>220pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">885382206001</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="885382206001"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ca8f9d0-593e-4359-9fc7-0aba87fa51a3</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">HH18N102J500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="HH18N102J500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c35923e8-9f27-40c9-83c8-eb354f305a7d</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">C0603C104K8RACTU</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C0603C104K8RACTU"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3f0b1c9e-650e-4c0c-8108-c52d17a68bb8</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">HH18N102J500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="HH18N102J500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7098ef4c-1487-45d5-a77c-677ba80e9884</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">CL32A106KOJNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="CL32A106KOJNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ad837506-a312-407b-8094-67a2c4ee237a</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>27pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RF18N270J500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="RF18N270J500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ab0c8d0-1e47-4896-902b-1422de6aac63</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">C0603C104K8RACTU</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C0603C104K8RACTU"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>231f5c5e-f182-454b-806e-9105ecad184f</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">CL32A106KOJNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="CL32A106KOJNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b02d4b5c-e598-4ecb-a506-9b3c026acf23</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">C0603C104K8RACTU</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C0603C104K8RACTU"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>493228a7-158d-4a02-a5c1-2df440a47c51</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">C0603C104K8RACTU</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C0603C104K8RACTU"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a83c35ea-b17c-4e18-b7b8-2cfa7fa73e92</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">CL32A106KOJNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="CL32A106KOJNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ed1f6bd0-f15d-4f7d-9d7b-e926e7dd9d70</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">CL32A106KOJNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="CL32A106KOJNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93f1f7a0-61f7-4e18-a03d-4873f2aa6565</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>3.3uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">CL31B335KOHNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="CL31B335KOHNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7880224-b69c-4b34-bae7-90aaa053d704</tstamps>
+    </comp>
+    <comp ref="C23">
+      <value>3.3uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">CL31B335KOHNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="CL31B335KOHNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>20600191-cc73-411d-89d6-831362172916</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>2.7nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603B272K500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0603B272K500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39c08418-017d-4542-8450-020137d8708c</tstamps>
+    </comp>
+    <comp ref="C25">
+      <value>2.7nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603B272K500CT</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0603B272K500CT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4b4b40ee-7f7b-40b9-b46d-1e01470b19cc</tstamps>
+    </comp>
+    <comp ref="FB1">
+      <value>FerriteBead</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">MMZ1005S601CT000 </field>
+      </fields>
+      <libsource lib="Device" part="FerriteBead" description="Ferrite bead"/>
+      <property name="MPN" value="MMZ1005S601CT000 "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07183797-56ce-440e-8b7c-3ff509466165</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_02x20_Odd_Even</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x20_Odd_Even" description="Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33594662-1c2f-44ee-8074-0ef091e0fe1b</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_Coaxial</value>
+      <footprint>Connector_Coaxial:SMA_Amphenol_132289_EdgeMount</footprint>
+      <datasheet> ~</datasheet>
+      <fields>
+        <field name="MPN">CONSMA020.062-G</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="MPN" value="CONSMA020.062-G"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9961e88c-2063-42c5-877e-c690a8df976d</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>AudioJack3_Ground</value>
+      <footprint>Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal</footprint>
+      <fields>
+        <field name="MPN">SJ-3523-SMT-TR </field>
+      </fields>
+      <libsource lib="Connector" part="AudioJack3_Ground" description="Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve"/>
+      <property name="MPN" value="SJ-3523-SMT-TR "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d3cf9aab-ed47-44a0-bc84-eeaf88780847</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>DNP</value>
+      <footprint>Inductor_SMD:L_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">DNP</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="MPN" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f4638c6-65df-40c0-ad8f-3b71ca158ae0</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>DNP</value>
+      <footprint>Inductor_SMD:L_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">DNP</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="MPN" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4a498ed-0b69-44e9-81aa-e0a1f239dc43</tstamps>
+    </comp>
+    <comp ref="L3">
+      <value>270nH</value>
+      <footprint>Inductor_SMD:L_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">AISC-1210-R27J-T</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="MPN" value="AISC-1210-R27J-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8aa7c2d3-99fc-4a48-bc51-5367b5dab61f</tstamps>
+    </comp>
+    <comp ref="L4">
+      <value>330nH</value>
+      <footprint>Inductor_SMD:L_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">AISC-1210-R33J-T</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="MPN" value="AISC-1210-R33J-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>69548de4-5347-4b25-b786-e5a8d673a442</tstamps>
+    </comp>
+    <comp ref="L5">
+      <value>330nH</value>
+      <footprint>Inductor_SMD:L_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">AISC-1210-R33J-T</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="MPN" value="AISC-1210-R33J-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f234f7c8-aac6-4ea2-bba1-7624adf4bc93</tstamps>
+    </comp>
+    <comp ref="L6">
+      <value>330nH</value>
+      <footprint>Inductor_SMD:L_1210_3225Metric</footprint>
+      <fields>
+        <field name="MPN">AISC-1210-R33J-T</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="MPN" value="AISC-1210-R33J-T"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>962d4855-2950-4caa-8dca-05b6cde3ad33</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf</datasheet>
+      <fields>
+        <field name="MPN">BC846-T </field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="BC846" description="0.1A Ic, 65V Vce, NPN Transistor, SOT-23"/>
+      <property name="MPN" value="BC846-T "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc8a263f-3646-4989-b776-658a3c61eaf4</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>DNP</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">DNP</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1bf446fd-88c1-4de3-9409-62fdf282a99f</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>DNP</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">DNP</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9d4a560-9138-490b-bec2-cad39d7dc347</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>270R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RMCF0603JT270R</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RMCF0603JT270R"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d37890ab-1af8-4b8b-8acd-ad30b181f384</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAJ0103T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAJ0103T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7bac533-cd61-457b-bd90-3f9cffde85e5</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAJ0103T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAJ0103T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>018fb1ea-c30f-47a1-bd43-e0130ca27237</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAJ0103T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAJ0103T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b8bb6e4-c3a5-43d9-b159-5368135277c6</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">CR0603-JW-101ELF</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="CR0603-JW-101ELF"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f551aca4-9441-468a-a6f9-2a0f87ba970f</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>10R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-10510RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-10510RL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e420c140-c564-4680-9b5d-6a5e03061df0</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAJ0103T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAJ0103T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7140ec3e-8241-4c98-9305-3e76208507dc</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAJ0103T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAJ0103T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>681b688d-60ca-4e0c-ad96-318032ce487c</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAJ0103T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAJ0103T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18ce433b-cc0c-4ae3-bd36-a38c3e8d1c3c</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAJ0103T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAJ0103T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2fa1cdb1-01d8-4a91-832c-04aa0d49dd68</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAJ0103T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAJ0103T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77fa6372-a3b0-4c39-942a-ce5d412cfd5f</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>16.7R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RT0603BRD0716R7L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD0716R7L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>affdee06-7f68-4123-a977-70fde2abac21</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>16.7R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RT0603BRD0716R7L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD0716R7L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7315d050-bb3f-43c3-8b01-1e5d1863ea40</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>16.7R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RT0603BRD0716R7L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD0716R7L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2299aecb-53ab-4cc3-b6cd-5ecccc9e564c</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>1R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">WR06W1R00FTL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="WR06W1R00FTL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1446492d-8c12-4332-8c0a-16a2633b8e46</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAJ0103T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAJ0103T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7b3b51e-95ea-46e6-92f5-be647284f962</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAJ0103T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAJ0103T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33872170-1318-49d3-a9cf-aabd45781f4f</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">652-CR0603JW-471ELF</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="652-CR0603JW-471ELF"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32f0ccfd-7ef7-47f2-b9d5-d17ca23f0b65</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">652-CR0603JW-471ELF</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="652-CR0603JW-471ELF"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>200faefe-0388-4cf4-9301-2b00d71c3c38</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_1.0x1.0mm</footprint>
+      <fields>
+        <field name="MPN">DNP</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="MPN" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30c37b6b-3398-4181-bb87-aec5c79aa567</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_1.0x1.0mm</footprint>
+      <fields>
+        <field name="MPN">DNP</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="MPN" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a95137c-13cc-4157-a0c8-0c9b8fc230d5</tstamps>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_1.0x1.0mm</footprint>
+      <fields>
+        <field name="MPN">DNP</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="MPN" value="DNP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04b32137-58d4-40e2-a4c0-3ae4f7418c2c</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>MAX2606</value>
+      <footprint>Package_TO_SOT_SMD:TSOT-23-6_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">MAX2606EUT+T </field>
+      </fields>
+      <libsource lib="mixer" part="MAX2606" description=""/>
+      <property name="MPN" value="MAX2606EUT+T "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48d24c22-cd90-437c-ab7d-7d29441c9862</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>ADEX-10L+</value>
+      <footprint>mixer:ADEX-10L+</footprint>
+      <fields>
+        <field name="MPN">ADEX-10L+ </field>
+      </fields>
+      <libsource lib="mixer" part="ADEX-10L+" description=""/>
+      <property name="MPN" value="ADEX-10L+ "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70b5c826-814a-4811-8f5b-357579d8d24b</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>VAM-6+</value>
+      <footprint>mixer:SOT-143-Weird</footprint>
+      <fields>
+        <field name="MPN">VAM-6+</field>
+      </fields>
+      <libsource lib="mixer" part="VAM-6+" description=""/>
+      <property name="MPN" value="VAM-6+"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98cf8c74-a9fd-4dd3-a2a7-54d65adb9064</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>PL133-27</value>
+      <footprint>mixer:TDFN2013-6LD-PL-1</footprint>
+      <fields>
+        <field name="MPN">PL133-27GC-R</field>
+      </fields>
+      <libsource lib="mixer" part="PL133-27" description=""/>
+      <property name="MPN" value="PL133-27GC-R"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2e3fa486-b525-4dc6-9c57-2b3ccf70ed88</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>CS4344</value>
+      <footprint>Package_SO:TSSOP-10_3x3mm_P0.5mm</footprint>
+      <fields>
+        <field name="MPN">CS4344-CZZR</field>
+      </fields>
+      <libsource lib="mixer" part="CS4344" description=""/>
+      <property name="MPN" value="CS4344-CZZR"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ulx3s_mixer.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c019b44d-3f59-43d5-85a1-f1b9aa9dcccc</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="AudioJack3_Ground">
+      <description>Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AudioJack3_Ground</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="G" name="" type="passive"/>
+        <pin num="R" name="" type="passive"/>
+        <pin num="S" name="" type="passive"/>
+        <pin num="T" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_Coaxial">
+      <description>coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>*BNC*</fp>
+        <fp>*SMA*</fp>
+        <fp>*SMB*</fp>
+        <fp>*SMC*</fp>
+        <fp>*Cinch*</fp>
+        <fp>*LEMO*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_Coaxial</field>
+        <field name="Datasheet"> ~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x20_Odd_Even">
+      <description>Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x20_Odd_Even</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="25" name="Pin_25" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+        <pin num="27" name="Pin_27" type="passive"/>
+        <pin num="28" name="Pin_28" type="passive"/>
+        <pin num="29" name="Pin_29" type="passive"/>
+        <pin num="30" name="Pin_30" type="passive"/>
+        <pin num="31" name="Pin_31" type="passive"/>
+        <pin num="32" name="Pin_32" type="passive"/>
+        <pin num="33" name="Pin_33" type="passive"/>
+        <pin num="34" name="Pin_34" type="passive"/>
+        <pin num="35" name="Pin_35" type="passive"/>
+        <pin num="36" name="Pin_36" type="passive"/>
+        <pin num="37" name="Pin_37" type="passive"/>
+        <pin num="38" name="Pin_38" type="passive"/>
+        <pin num="39" name="Pin_39" type="passive"/>
+        <pin num="40" name="Pin_40" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="FerriteBead">
+      <description>Ferrite bead</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">FerriteBead</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BC846">
+      <description>0.1A Ic, 65V Vce, NPN Transistor, SOT-23</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC846</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="mixer" part="ADEX-10L+">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADEX-10L+</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_out"/>
+        <pin num="2" name="IF" type="bidirectional"/>
+        <pin num="3" name="RF" type="bidirectional"/>
+        <pin num="4" name="GND" type="power_out"/>
+        <pin num="5" name="GND" type="power_out"/>
+        <pin num="6" name="LO" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="mixer" part="CS4344">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CS4344</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDIN" type="input"/>
+        <pin num="2" name="SCLK" type="input"/>
+        <pin num="3" name="LRCLK" type="input"/>
+        <pin num="4" name="MCLK" type="input"/>
+        <pin num="5" name="VQ" type="output"/>
+        <pin num="6" name="FILT+" type="power_out"/>
+        <pin num="7" name="AOUTL" type="output"/>
+        <pin num="8" name="GND" type="power_out"/>
+        <pin num="9" name="VA" type="power_in"/>
+        <pin num="10" name="AOUTR" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="mixer" part="MAX2606">
+      <fields>
+        <field name="Reference">U?</field>
+        <field name="Value">MAX2606</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IND" type="input"/>
+        <pin num="2" name="GND" type="power_out"/>
+        <pin num="3" name="TUNE" type="input"/>
+        <pin num="4" name="VOUT-" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="VOUT+" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="mixer" part="PL133-27">
+      <fields>
+        <field name="Reference">U4</field>
+        <field name="Value">PL133-27</field>
+        <field name="Footprint">mixer:TDFN2013-6LD-PL-1</field>
+      </fields>
+      <pins>
+        <pin num="0" name="EP" type="power_out"/>
+        <pin num="1" name="FIN" type="input"/>
+        <pin num="2" name="CLK1" type="output"/>
+        <pin num="3" name="GND" type="power_out"/>
+        <pin num="4" name="CLK0" type="output"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="OE" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="mixer" part="VAM-6+">
+      <fields>
+        <field name="Reference">U3</field>
+        <field name="Value">VAM-6+</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-143R_Handsoldering</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RF-IN" type="input"/>
+        <pin num="2" name="GND" type="power_out"/>
+        <pin num="3" name="RF-OUT" type="power_out"/>
+        <pin num="4" name="GND" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>/usr/share/kicad/symbols//Transistor_BJT.kicad_sym</uri>
+    </library>
+    <library logical="mixer">
+      <uri>/home/jrsharp/hardware/ULX3S_MIXER/ulx3s_mixer/mixer.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3VA">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="FB1" pin="1" pintype="passive"/>
+      <node ref="U5" pin="9" pinfunction="VA" pintype="power_in"/>
+    </net>
+    <net code="2" name="+3V3">
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="FB1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J1" pin="19" pinfunction="Pin_19" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J1" pin="20" pinfunction="Pin_20" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="3" name="+5V">
+      <node ref="J1" pin="40" pinfunction="Pin_40" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/LO_PLL_PRE">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="L4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="VOUT+" pintype="output"/>
+    </net>
+    <net code="5" name="/LO_PRE">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="L5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="VOUT-" pintype="output"/>
+    </net>
+    <net code="6" name="/LRCLK">
+      <node ref="J1" pin="14" pinfunction="Pin_14" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="LRCLK" pintype="input"/>
+    </net>
+    <net code="7" name="/MCLK">
+      <node ref="J1" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="MCLK" pintype="input"/>
+    </net>
+    <net code="8" name="/RF_IN">
+      <node ref="J2" pin="1" pinfunction="In" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="RF-IN" pintype="input"/>
+    </net>
+    <net code="9" name="/RF_NO_DC">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="/RF_POST_AMP">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="L6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="RF-OUT" pintype="power_out"/>
+    </net>
+    <net code="11" name="/RF_POST_SPLIT">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="/RF_SPLIT">
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="/SCLK">
+      <node ref="J1" pin="16" pinfunction="Pin_16" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="SCLK" pintype="input"/>
+    </net>
+    <net code="14" name="/SDIN">
+      <node ref="J1" pin="18" pinfunction="Pin_18" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="SDIN" pintype="input"/>
+    </net>
+    <net code="15" name="GN21">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J1" pin="23" pinfunction="Pin_23" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="GN22">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="J1" pin="25" pinfunction="Pin_25" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+    </net>
+    <net code="17" name="GN23">
+      <node ref="J1" pin="27" pinfunction="Pin_27" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="18" name="GN24">
+      <node ref="J1" pin="29" pinfunction="Pin_29" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="19" name="GN25">
+      <node ref="J1" pin="31" pinfunction="Pin_31" pintype="passive"/>
+    </net>
+    <net code="20" name="GN26">
+      <node ref="J1" pin="33" pinfunction="Pin_33" pintype="passive"/>
+    </net>
+    <net code="21" name="GN27">
+      <node ref="J1" pin="35" pinfunction="Pin_35" pintype="passive"/>
+    </net>
+    <net code="22" name="GND">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J1" pin="21" pinfunction="Pin_21" pintype="passive"/>
+      <node ref="J1" pin="22" pinfunction="Pin_22" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J1" pin="37" pinfunction="Pin_37" pintype="passive"/>
+      <node ref="J1" pin="38" pinfunction="Pin_38" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Ext" pintype="passive"/>
+      <node ref="J3" pin="G" pintype="passive"/>
+      <node ref="J3" pin="S" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="L3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="power_out"/>
+      <node ref="U2" pin="1" pinfunction="GND" pintype="power_out"/>
+      <node ref="U2" pin="4" pinfunction="GND" pintype="power_out"/>
+      <node ref="U2" pin="5" pinfunction="GND" pintype="power_out"/>
+      <node ref="U3" pin="2" pinfunction="GND" pintype="power_out"/>
+      <node ref="U3" pin="4" pinfunction="GND" pintype="power_out"/>
+      <node ref="U4" pin="0" pinfunction="EP" pintype="power_out"/>
+      <node ref="U4" pin="3" pinfunction="GND" pintype="power_out"/>
+      <node ref="U5" pin="8" pinfunction="GND" pintype="power_out"/>
+    </net>
+    <net code="23" name="GP21">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="J1" pin="24" pinfunction="Pin_24" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="24" name="GP22">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="J1" pin="26" pinfunction="Pin_26" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="25" name="GP23">
+      <node ref="J1" pin="28" pinfunction="Pin_28" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="26" name="GP24">
+      <node ref="J1" pin="30" pinfunction="Pin_30" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="OE" pintype="input"/>
+    </net>
+    <net code="27" name="GP25">
+      <node ref="J1" pin="32" pinfunction="Pin_32" pintype="passive"/>
+    </net>
+    <net code="28" name="GP26">
+      <node ref="J1" pin="34" pinfunction="Pin_34" pintype="passive"/>
+    </net>
+    <net code="29" name="GP27">
+      <node ref="J1" pin="36" pinfunction="Pin_36" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="CLK0" pintype="output"/>
+    </net>
+    <net code="30" name="IF">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="IF" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="LO">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="LO" pintype="input"/>
+    </net>
+    <net code="32" name="LO_PLL">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="FIN" pintype="input"/>
+    </net>
+    <net code="33" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="TUNE" pintype="input"/>
+    </net>
+    <net code="34" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="L4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="L5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="35" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+    </net>
+    <net code="36" name="Net-(C17-Pad2)">
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+    </net>
+    <net code="37" name="Net-(C19-Pad1)">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="VQ" pintype="output"/>
+    </net>
+    <net code="38" name="Net-(C21-Pad1)">
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="FILT+" pintype="power_out"/>
+    </net>
+    <net code="39" name="Net-(C22-Pad1)">
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="U5" pin="10" pinfunction="AOUTR" pintype="output"/>
+    </net>
+    <net code="40" name="Net-(C22-Pad2)">
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(C23-Pad1)">
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="AOUTL" pintype="output"/>
+    </net>
+    <net code="42" name="Net-(C23-Pad2)">
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+    </net>
+    <net code="43" name="Net-(C24-Pad2)">
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="J3" pin="T" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+    </net>
+    <net code="44" name="Net-(C25-Pad2)">
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="J3" pin="R" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+    </net>
+    <net code="45" name="Net-(L1-Pad1)">
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(L2-Pad2)">
+      <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="L3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="IND" pintype="input"/>
+    </net>
+    <net code="47" name="Net-(L6-Pad1)">
+      <node ref="L6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="48" name="RF">
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="RF" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="RF2">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+    </net>
+    <net code="50" name="VTUNE">
+      <node ref="Q1" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="51" name="unconnected-(J1-Pad5)">
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+    </net>
+    <net code="52" name="unconnected-(J1-Pad6)">
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+    </net>
+    <net code="53" name="unconnected-(J1-Pad7)">
+      <node ref="J1" pin="7" pinfunction="Pin_7" pintype="passive"/>
+    </net>
+    <net code="54" name="unconnected-(J1-Pad8)">
+      <node ref="J1" pin="8" pinfunction="Pin_8" pintype="passive"/>
+    </net>
+    <net code="55" name="unconnected-(J1-Pad9)">
+      <node ref="J1" pin="9" pinfunction="Pin_9" pintype="passive"/>
+    </net>
+    <net code="56" name="unconnected-(J1-Pad10)">
+      <node ref="J1" pin="10" pinfunction="Pin_10" pintype="passive"/>
+    </net>
+    <net code="57" name="unconnected-(J1-Pad11)">
+      <node ref="J1" pin="11" pinfunction="Pin_11" pintype="passive"/>
+    </net>
+    <net code="58" name="unconnected-(J1-Pad13)">
+      <node ref="J1" pin="13" pinfunction="Pin_13" pintype="passive"/>
+    </net>
+    <net code="59" name="unconnected-(J1-Pad15)">
+      <node ref="J1" pin="15" pinfunction="Pin_15" pintype="passive"/>
+    </net>
+    <net code="60" name="unconnected-(J1-Pad17)">
+      <node ref="J1" pin="17" pinfunction="Pin_17" pintype="passive"/>
+    </net>
+    <net code="61" name="unconnected-(J1-Pad39)">
+      <node ref="J1" pin="39" pinfunction="Pin_39" pintype="passive"/>
+    </net>
+    <net code="62" name="unconnected-(U4-Pad2)">
+      <node ref="U4" pin="2" pinfunction="CLK1" pintype="output"/>
+    </net>
+  </nets>
+</export>
