@@ -1,0 +1,56 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sat Aug 17 10:17:39 2024
+[*]
+[dumpfile] "/home/jrsharp/hardware/ULX3S_MIXER/hdl/test/006_AUD_CIC/dump.vcd"
+[dumpfile_mtime] "Sat Aug 17 10:15:19 2024"
+[dumpfile_size] 1432529296
+[savefile] "/home/jrsharp/hardware/ULX3S_MIXER/hdl/test/006_AUD_CIC/config.gtkw"
+[timestart] 0
+[size] 1920 993
+[pos] -1 -1
+*-32.000000 9748705000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 222
+[signals_width] 252
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@28
+tb.CLK
+@200
+-
+@8420
+tb.xI_out[15:0]
+@20000
+-
+-
+-
+-
+@28
+tb.cic0.out_tick
+@200
+-
+@28
+tb.cic0.sample
+@8420
+tb.decim_I[15:0]
+@20000
+-
+-
+-
+@8420
+tb.RF_in
+tb.cic1.x_out[15:0]
+@20000
+-
+-
+@8022
+tb.cic1.integ1[31:0]
+tb.cic1.integ2[31:0]
+tb.cic1.integ3[31:0]
+@8023
+tb.cic1.integ4[31:0]
+@28
+tb.cic1.in_tick
+[pattern_trace] 1
+[pattern_trace] 0

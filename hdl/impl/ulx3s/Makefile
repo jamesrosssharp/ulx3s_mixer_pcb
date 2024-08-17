@@ -13,13 +13,16 @@ SRCDIR=../../src
 SOURCE= $(SRCDIR)/am_demod.v	\
 	$(SRCDIR)/mult.v	\
 	$(SRCDIR)/cic.v		\
+	$(SRCDIR)/aud_cic.v	\
 	$(SRCDIR)/mixer.v	\
 	$(SRCDIR)/nco.v		\
 	$(SRCDIR)/sine_table.v	\
 	$(SRCDIR)/noise_table.v	\
 	$(SRCDIR)/cos_table.v	\
 	$(SRCDIR)/audio.v	\
-	$(SRCDIR)/am_gen.v	
+	$(SRCDIR)/am_gen.v	\
+	$(SRCDIR)/fm_demod.v	\
+	$(SRCDIR)/arg_table.v	
 
 SRC_FILES := $(SOURCE)
 

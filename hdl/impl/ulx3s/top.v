@@ -64,14 +64,14 @@ always @(posedge pll_clk_100)
 begin
 	if (counter1 == 24'd0) begin
 		if (btn[5] == 1'b1)	/* left */
-			phase_inc <= phase_inc + 40'h10c6f7; // 100 Hz
+			phase_inc <= phase_inc + 40'h110c6f7; // 1600 Hz
 		if (btn[6] == 1'b1)	/* right */
-			phase_inc <= phase_inc - 40'h10c6f7; // 100 Hz
+			phase_inc <= phase_inc - 40'h110c6f7; // 1600 Hz
 		
 		if (btn[3] == 1'b1)	/* up */
-			phase_inc <= phase_inc + 40'h1346dc5d; // 5kHz
+			phase_inc <= phase_inc + 40'h1346dc5d; // 35kHz
 		if (btn[4] == 1'b1)	/* down */
-			phase_inc <= phase_inc - 40'h1346dc5d; // 5kHz
+			phase_inc <= phase_inc - 40'h1346dc5d; // 35kHz
 	end
 end
 
@@ -158,21 +158,36 @@ cic cic1
 );
 
 wire out_tick;
-wire [15:0] demod_out;
+wire [15:0] demod_out_a;
 
-am_demod am0 
+fm_demod fm0 
 (
 	CLK,
 	RSTb,
 
-	xI_out,
-	xQ_out,
+	xI_out[15:11],
+	xQ_out[15:11],
 	out_tickI,	/* tick should go high when new sample is ready */
 
-	demod_out,
+	demod_out_a,
 	out_tick	/* tick will go high when the new AM demodulated sample is ready */
 
 );
+
+wire [15:0] demod_out;
+wire out_tickA;
+
+aud_cic cic2
+(
+	CLK,
+	RSTb,
+	out_tick,
+	demod_out_a,
+	8'h0,
+	demod_out,
+	out_tickA
+);
+
 
 //assign led[3] = demod_out[0];
 
