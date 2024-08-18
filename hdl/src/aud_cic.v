@@ -29,8 +29,8 @@
  */
 
 module aud_cic #(	
-		parameter WIDTH = 38,	/* see notes above for register width */
-		parameter DECIM = 16,
+		parameter WIDTH = 40,	/* see notes above for register width */
+		parameter DECIM = 20,
 		parameter BITS  = 16,
 		parameter GAIN_BITS = 8 
 )
@@ -143,7 +143,7 @@ begin
 			comb5 <= comb4 - comb5_in_del;
 
 			// Doesn't seem like variable gain synthesizes with yosys...
-			x_out <= comb5 >>> (WIDTH - BITS - 2 - gain);
+			x_out <= comb5 >>> (WIDTH - BITS - 3 - gain);
 			out_tick <= 1'b1;
 		end else begin
 			out_tick <= 1'b0;

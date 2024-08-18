@@ -22,7 +22,8 @@ SOURCE= $(SRCDIR)/am_demod.v	\
 	$(SRCDIR)/audio.v	\
 	$(SRCDIR)/am_gen.v	\
 	$(SRCDIR)/fm_demod.v	\
-	$(SRCDIR)/arg_table.v	
+	$(SRCDIR)/arg_table.v	\
+	$(SRCDIR)/vu_table.v	
 
 SRC_FILES := $(SOURCE)
 

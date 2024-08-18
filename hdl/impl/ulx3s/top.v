@@ -43,8 +43,8 @@ ecp5pll #(
 		.locked(clk_locked)
 	);
 
-assign led[0] = clk_locked;
-assign led[7:3] = {7{1'b0}};
+//assign led[0] = clk_locked;
+//assign led[7:3] = {7{1'b0}};
 
 
 /* some blinking leds */
@@ -55,8 +55,8 @@ reg [23:0] counter2;
 always @(posedge pll_clk_100) counter1 <= counter1 + 1;
 always @(posedge pll_clk_25) counter2 <= counter2 + 1;
 
-assign led[1] = counter1[23];
-assign led[2] = counter2[23];
+//assign led[1] = counter1[23];
+//assign led[2] = counter2[23];
 
 /* tuning buttons */
 
@@ -232,6 +232,73 @@ am_gen gen0
 );
 
 `endif
+
+/* Get amplitude and filter for cheesy VU meter */
+
+wire [15:0] VU_out;
+wire vu_out_tick;
+
+am_demod am1
+(
+        CLK,
+        RSTb,
+
+        demod_out,
+        demod_out,
+        out_tickA, 
+
+        VU_out,
+        vu_out_tick
+
+);
+
+reg [7:0] vu_meter;
+reg [7:0] vu_meter_target;
+wire [7:0] vu_decode;
+
+vuTable vu0 (CLK, VU_out[15:6], vu_decode);
+
+always @(posedge CLK)
+begin
+	if (vu_out_tick == 1'b1)
+	begin
+		vu_meter_target <= vu_decode;
+	end	
+
+end
+
+reg [22:0] count_vu = 23'h000000;
+
+always @(posedge CLK)
+begin
+	count_vu <= count_vu + 1;
+
+	if (count_vu == 23'h000000)
+	begin
+		if (vu_meter_target > vu_meter) begin
+			if (vu_meter == 8'h00)
+				vu_meter <= 8'h01;
+			else
+				vu_meter <= (vu_meter << 1) | 8'h1;	
+		end	
+
+		if (vu_meter_target < vu_meter) begin
+			vu_meter <= (vu_meter >> 1);
+		end		
+	end
+
+end
+
+assign led[0] = vu_meter[3];
+assign led[1] = vu_meter[2];
+assign led[2] = vu_meter[1];
+assign led[3] = vu_meter[0];
+
+assign led[4] = vu_meter[3];
+assign led[5] = vu_meter[2];
+assign led[6] = vu_meter[1];
+assign led[7] = vu_meter[0];
+
 
 
 endmodule 
