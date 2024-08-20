@@ -10,7 +10,7 @@ theFile.write("reg [15:0] mem [0:1023];\n")
 
 for i in range(0, 1024):
         
-    re = ((i & 0x3e) >> 5)
+    re = ((i & 0x3e0) >> 5)
 
     if (re & 0x10):
         re = re - 32
