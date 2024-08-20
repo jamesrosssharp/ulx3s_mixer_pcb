@@ -174,6 +174,20 @@ fm_demod fm0
 
 );
 
+wire out_tick_d;
+wire [15:0] demod_out_d;
+
+deemph d0 (
+    CLK,
+    RSTb,
+    demod_out_a,
+    out_tick,
+    demod_out_d,
+    out_tick_d
+);
+
+
+
 wire [15:0] demod_out;
 wire out_tickA;
 
@@ -181,8 +195,8 @@ aud_cic cic2
 (
 	CLK,
 	RSTb,
-	out_tick,
-	demod_out_a,
+	out_tick_d,
+	demod_out_d,
 	8'h0,
 	demod_out,
 	out_tickA
