@@ -3,7 +3,7 @@
 /*
 	ULX3S Mixer
 
-deemph.v: FM deemphasis filter
+bandpass_19khz.v: 19kHz bandpass filter
 
 License: MIT License
 
@@ -32,45 +32,57 @@ SOFTWARE.
 /* This filter will run after FM demod, at rate 100MHz / 200 = 500kHz */
 
 /* Filter formula:
-*
-*   512 * yn+1 = (512 - 8 - 4 - 1) yn + (8 + 4 + 1) xn
-*
-*/
+ *
+ *   512 * yn = 984 yn-1 - 501 yn-2 + 10 xn - 10 xn-2
+ *
+ */
 
-module deemph (
+module bandpass_19kHz (
     input  CLK,
     input  RSTb,
-    input  [15:0] xin,
+    input  signed [15:0] xin,
     input  in_tick,
-    output [15:0] yout,
+    output signed [15:0] yout,
     output reg out_tick
 );
 
-reg [24:0] a = 25'd0;
-reg [24:0] b = 25'd0;
-reg [24:0] c = 25'd0;
+reg signed [15:0] yn   = 16'd0;
+reg signed [15:0] yn_1 = 16'd0;
+reg signed [15:0] yn_2 = 16'd0;
+reg signed [15:0] xn_0 = 16'd0;
+reg signed [15:0] xn_1 = 16'd0;
+reg signed [15:0] xn_2 = 16'd0;
 
-localparam state_idle = 2'b00;
-localparam state_add1 = 2'b01;
-localparam state_add2 = 2'b10;
-localparam state_out = 2'b11;
+reg signed [24:0] a = 25'd0;
+reg signed [24:0] b = 25'd0;
 
-reg [1:0] state = state_idle;
+
+localparam state_idle  = 3'b000;
+localparam state_shift = 3'b001;
+localparam state_mul   = 3'b010;
+localparam state_add   = 3'b011;
+localparam state_out   = 3'b100;
+
+reg [2:0] state = state_idle;
 
 always @(posedge CLK)
 begin
     case (state)
         state_idle:
             if (in_tick == 1'b1)
-                state <= state_add1;
-        state_add1:
-            state <= state_add2;
-        state_add2:
+                state <= state_shift;
+        state_shift:
+            state <= state_mul;
+        state_mul:
+            state <= state_add;
+        state_add:
             state <= state_out;
         state_out:
             state <= state_idle;
     endcase        
 end
+
+wire signed [24:0] sum = a + b;
 
 always @(posedge CLK)
 begin
@@ -78,29 +90,42 @@ begin
 
     if (RSTb == 1'b0) begin
 
-        a <= 25'd0;
-        b <= 25'd0;
-        c <= 25'd0;
+        yn   <= 16'd0;
+        yn_1 <= 16'd0;
+        yn_2 <= 16'd0;
+        xn_1 <= 16'd0;
+        xn_2 <= 16'd0;
+        xn_0 <= 16'd0;
 
     end else begin
 
         case (state)
             state_idle: ;
-            state_add1: begin 
-                a <= c - {6'd0, c[24:6]}  - {7'd0, c[24:7]} - {9'd0, c[24:9]};
-                b <= {6'd0, xin, 3'd0} + {7'd0, xin, 2'd0} + {9'd0, xin};
+            state_shift: begin 
+                xn_0 <= xin;
+                xn_1 <= xn_0;
+                xn_2 <= xn_1;
+
+                yn_1 <= yn;
+                yn_2 <= yn_1;
             end
-            state_add2: begin
-               c <= a + b;
+            state_mul: begin
+                /*   512 * yn = 984 yn-1 - 501 yn-2 + 10 xn - 10 xn-2 */
+                a <= (16'sd984 * yn_1) - (26'sd501 * yn_2);            
+                b <= (24'sd5 *  xn_0) - (24'sd5 * xn_2);
             end
-            state_out: begin
+            state_add: begin
+                yn <= sum[24:9];
+            end
+            state_out:
                 out_tick <= 1'b1;
-            end
         endcase     
 
     end
 end
 
-assign yout = c[24:9];
+assign yout = yn[15:0];
 
 endmodule
+
+

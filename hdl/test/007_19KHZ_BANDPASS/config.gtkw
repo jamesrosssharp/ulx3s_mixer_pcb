@@ -1,0 +1,69 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sat Aug 24 07:33:47 2024
+[*]
+[dumpfile] "/home/jrsharp/hardware/ULX3S_MIXER/hdl/test/007_19KHZ_BANDPASS/dump.vcd"
+[dumpfile_mtime] "Sat Aug 24 07:33:01 2024"
+[dumpfile_size] 86229726
+[savefile] "/home/jrsharp/hardware/ULX3S_MIXER/hdl/test/007_19KHZ_BANDPASS/config.gtkw"
+[timestart] 0
+[size] 1920 993
+[pos] -1 -1
+*-28.000000 158025000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 222
+[signals_width] 252
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@28
+tb.CLK
+@8420
+tb.bp0.xin[15:0]
+@20000
+-
+-
+-
+-
+-
+-
+-
+@8420
+tb.bp0.yn[15:0]
+@20001
+-
+@20000
+-
+-
+@200
+-
+@22
+tb.bp0.xin[15:0]
+tb.bp0.xn_1[15:0]
+tb.bp0.xn_2[15:0]
+@20000
+-
+-
+@8420
+tb.bp0.yn[15:0]
+@22
+tb.bp0.yn_1[15:0]
+tb.bp0.yn_2[15:0]
+@20000
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+@200
+-
+[pattern_trace] 1
+[pattern_trace] 0

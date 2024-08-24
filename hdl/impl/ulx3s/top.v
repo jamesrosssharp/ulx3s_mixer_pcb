@@ -23,7 +23,10 @@ module top (
 	output       gp20,
   	output       gp19,
   	output       gp18,
-  	output       gp17
+  	output       gp17,
+
+	/* vco pwm */
+	output	     gp23
 );
 
 
@@ -313,6 +316,18 @@ assign led[5] = vu_meter[2];
 assign led[6] = vu_meter[1];
 assign led[7] = vu_meter[0];
 
+reg [15:0] pwm = 16'd0;
 
+always @(posedge CLK)
+begin
+	if (counter1 == 24'd0) begin
+		if (btn[1] == 1'b1)
+			pwm <= pwm + 16'h0100; 
+		if (btn[2] == 1'b1)
+			pwm <= pwm - 16'h0100; 
+	end	
+end
+
+assign gp23 = (counter1[15:0] < pwm) ? 1'b1 : 1'b0; 
 
 endmodule 

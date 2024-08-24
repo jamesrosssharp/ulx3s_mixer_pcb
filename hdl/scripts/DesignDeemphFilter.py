@@ -10,18 +10,18 @@ import numpy as np
 #print(a)
 #print(b)
 
-alpha = (512.0 - 5.0) / 512.0
+alpha = (512.0 - 13.0) / 512.0
 
 b = 1 - alpha
 a = [1, -alpha]
 
-w, h = signal.freqz(b, a)
+w, h = signal.freqz(b, a, fs=500000)
 
 fig = plt.figure()
 
 ax = fig.add_subplot(1, 1, 1)
 
-ax.semilogx(w * 250000, 20 * np.log10(np.maximum(abs(h), 1e-5)))
+ax.semilogx(w, 20 * np.log10(np.maximum(abs(h), 1e-5)))
 
 ax.set_title('lowpass frequency response')
 
