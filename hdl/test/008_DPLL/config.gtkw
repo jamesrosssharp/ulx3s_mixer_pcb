@@ -1,0 +1,60 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Aug 25 04:58:04 2024
+[*]
+[dumpfile] "/home/jrsharp/hardware/ULX3S_MIXER/hdl/test/008_DPLL/dump.vcd"
+[dumpfile_mtime] "Sun Aug 25 04:56:18 2024"
+[dumpfile_size] 1457899541
+[savefile] "/home/jrsharp/hardware/ULX3S_MIXER/hdl/test/008_DPLL/config.gtkw"
+[timestart] 0
+[size] 1920 993
+[pos] -1 -1
+*-33.000000 2490005000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 222
+[signals_width] 252
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@28
+tb.CLK
+tb.dpll0.divide_count[2:0]
+tb.dpll0.divide_out
+tb.dpll0.sigin
+tb.dpll0.up
+tb.dpll0.down
+@8025
+tb.dpll0.phase_incr[31:0]
+@20000
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+@200
+-
+@20000
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+@200
+-
+[pattern_trace] 1
+[pattern_trace] 0
