@@ -20,7 +20,7 @@ for i in range(0, 1024):
     if (im & 0x10):
         im = im - 32
 
-    argval = (math.atan2(im, re) / (math.pi / 2)) * 32767.0
+    argval = (math.atan2(im / 32.0, re / 32.0) / (math.pi)) * 32767.0
 
     text = "initial mem[%d] = 16'h%x;\n" % (i, int(argval) & 0xffff)
     theFile.write(text)

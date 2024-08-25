@@ -26,7 +26,9 @@ module top (
   	output       gp17,
 
 	/* vco pwm */
-	output	     gp23
+	output	     gp23,
+
+	output       gn7
 );
 
 
@@ -161,7 +163,7 @@ cic cic1
 );
 
 wire out_tick;
-wire [15:0] demod_out_a;
+wire signed [15:0] demod_out_a;
 
 fm_demod fm0 
 (
@@ -173,12 +175,48 @@ fm_demod fm0
 	out_tickI,	/* tick should go high when new sample is ready */
 
 	demod_out_a,
-	out_tick	/* tick will go high when the new AM demodulated sample is ready */
+	out_tick	/* tick will go high when the new FM demodulated sample is ready */
 
 );
 
+/* Extract the 19kHz pilot tone */
+
+wire out_tick_19kHz;
+wire signed [15:0] yout_19kHz;
+
+bandpass_19kHz bp0 (
+    CLK,
+    RSTb,
+    demod_out_a,
+    out_tick,
+    yout_19kHz,
+    out_tick_19kHz
+);
+
+//assign gn7 = (yout_19kHz > 16'sd0);
+
+// Hysteresis for 19kHz tone 
+
+reg up_down = 1'b0;
+
+assign gn7 = up_down;
+
+always @(posedge CLK)
+begin
+	if (up_down == 1'b0) begin
+		if (yout_19kHz > 16'sd200) begin 
+			up_down <= 1'b1;
+		end	
+	end else begin
+		if (yout_19kHz < -16'sd200) begin 
+			up_down <= 1'b0;
+		end	
+	end
+end
+
+
 wire out_tick_d;
-wire [15:0] demod_out_d;
+wire signed [15:0] demod_out_d;
 
 deemph d0 (
     CLK,
@@ -188,7 +226,6 @@ deemph d0 (
     demod_out_d,
     out_tick_d
 );
-
 
 
 wire [15:0] demod_out;

@@ -111,8 +111,8 @@ begin
             end
             state_mul: begin
                 /*   512 * yn = 984 yn-1 - 501 yn-2 + 10 xn - 10 xn-2 */
-                a <= (16'sd984 * yn_1) - (26'sd501 * yn_2);            
-                b <= (24'sd5 *  xn_0) - (24'sd5 * xn_2);
+                a <= (16'sd993 * yn_1) - (26'sd510 * yn_2);            
+                b <= (24'sd2 *  xn_0) - (24'sd2 * xn_2);
             end
             state_add: begin
                 yn <= sum[24:9];
