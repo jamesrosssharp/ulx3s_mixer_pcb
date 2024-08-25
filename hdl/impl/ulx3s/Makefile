@@ -25,6 +25,7 @@ SOURCE= $(SRCDIR)/am_demod.v	\
 	$(SRCDIR)/arg_table.v	\
 	$(SRCDIR)/vu_table.v    \
 	$(SRCDIR)/bandpass_19khz.v    \
+	$(SRCDIR)/dpll.v    	\
 	$(SRCDIR)/deemph.v   
 			
 

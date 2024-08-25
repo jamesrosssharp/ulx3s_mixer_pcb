@@ -1,7 +1,8 @@
 
 SRCDIR=../../src
 
-SOURCE= $(SRCDIR)/dpll.v
+SOURCE= $(SRCDIR)/dpll.v	\
+	$(SRCDIR)/cos_table.v
 
  
 PROJECT=dpll

@@ -39,11 +39,13 @@ module dpll (
     input [2:0] m,          /* The divider in the feedback path */
     input [1:0] n,          /* The postscaler */
 
-    output [15:0] sigout    /* The sinusoidal output, phase locked to input */
+    output [15:0] sigout,    /* The sinusoidal output, phase locked to input */
+
+    output digout            /* The digital output, phase locked to a multiple of input */
 
 );
 
-reg [35:0] count        = 36'd0;   /* NCO Count - we include for additional bits 
+reg [34:0] count        = 35'd0;   /* NCO Count - we include for additional bits 
                                       in the count for postscaler */ 
 reg [31:0] phase_incr   = 32'd6000; /* NCO phase increment will run from
                                         6000 = 35kHz to
@@ -52,10 +54,9 @@ always @(posedge CLK)
 begin
     if (RSTb == 1'b0) begin
         count <= 36'd0;
-        phase_incr <= 32'd6000;
     end
     else
-        count <= count + {4'd0, phase_incr};
+        count <= count + {3'd0, phase_incr};
 
 end
 
@@ -134,19 +135,43 @@ begin
 end
 
 reg [31:0] phase_err = 32'd0;
-reg [46:0] phase_filter = 47'd0;
+reg [45:0] phase_filter = 46'd0;
 
 always @(posedge CLK)
 begin
 
     if (up == 1'b1)
-        phase_err <= 32'd1675037;
-    if (down == 1'b1)
-        phase_err <= 32'd1589137;
+        phase_err <= 32'd1675037;   // 39kHz
+    else if (down == 1'b1)
+        phase_err <= 32'd1589137;   // 37kHz
+//    else 
+//        phase_err <= phase_incr;
 
-    phase_filter <= phase_filter - {15'd0, phase_filter[46:15]} + phase_err;
-    phase_incr <= phase_filter[46:15];
+    phase_filter <= phase_filter - {14'd0, phase_filter[45:14]} + phase_err;
+    phase_incr <= phase_filter[45:14];
 
 end
 
-endmodule;
+// Implement post divider
+
+reg [31:0] count_out;
+
+always @(posedge CLK)
+begin
+    case (n)
+        2'b00:
+            count_out <= count[31:0];
+        2'b01:
+            count_out <= count[32:1];
+        2'b10:
+            count_out <= count[33:2];
+        2'b11:
+            count_out <= count[34:3];
+    endcase
+end
+
+cosTable c0(CLK, count_out[31:22], sigout);
+
+assign digout = !count_out[31];
+
+endmodule

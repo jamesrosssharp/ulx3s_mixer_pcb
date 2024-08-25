@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Sun Aug 25 04:58:04 2024
+[*] Sun Aug 25 05:34:59 2024
 [*]
 [dumpfile] "/home/jrsharp/hardware/ULX3S_MIXER/hdl/test/008_DPLL/dump.vcd"
-[dumpfile_mtime] "Sun Aug 25 04:56:18 2024"
-[dumpfile_size] 1457899541
+[dumpfile_mtime] "Sun Aug 25 05:34:40 2024"
+[dumpfile_size] 189366450
 [savefile] "/home/jrsharp/hardware/ULX3S_MIXER/hdl/test/008_DPLL/config.gtkw"
 [timestart] 0
 [size] 1920 993
 [pos] -1 -1
-*-33.000000 2490005000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-30.000000 2622005000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb.
 [sst_width] 222
 [signals_width] 252
@@ -20,9 +20,12 @@ tb.CLK
 tb.dpll0.divide_count[2:0]
 tb.dpll0.divide_out
 tb.dpll0.sigin
+@29
+tb.dpll0.digout
+@28
 tb.dpll0.up
 tb.dpll0.down
-@8025
+@8024
 tb.dpll0.phase_incr[31:0]
 @20000
 -
@@ -37,6 +40,10 @@ tb.dpll0.phase_incr[31:0]
 -
 @200
 -
+@8420
+tb.dpll0.sigout[15:0]
+@8022
+tb.dpll0.count_out[31:0]
 @20000
 -
 -
@@ -56,5 +63,7 @@ tb.dpll0.phase_incr[31:0]
 -
 @200
 -
+@8022
+tb.dpll0.count[34:0]
 [pattern_trace] 1
 [pattern_trace] 0

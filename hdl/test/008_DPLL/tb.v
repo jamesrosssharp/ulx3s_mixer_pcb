@@ -41,6 +41,7 @@ always @(posedge CLK) begin
 end
 
 wire [15:0] sigout;
+wire digout;
 
 dpll dpll0 (
 
@@ -49,17 +50,18 @@ dpll dpll0 (
 
     xin, 
 
-    3'd1,	/* Multiply by 4 */
-    3'd1,	/* Divide by 2   */
+    3'd1,	/* Multiply by 2 */
+    3'd0,	/* Divide by 1   */
 
-    sigout 
+    sigout,
+    digout
     
 );
 
 initial begin
 	$dumpfile("dump.vcd");
 	$dumpvars(0, tb);
-	# 100000000 $finish;
+	# 50000000 $finish;
 end
 
 endmodule;

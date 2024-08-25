@@ -11,7 +11,8 @@ module audio
 	input RSTb,
 
 	// Port interface
-	input 	[BITS - 1 : 0] DATA_IN,
+	input 	[BITS - 1 : 0] DATA_IN_LEFT,
+	input 	[BITS - 1 : 0] DATA_IN_RIGHT,
 
 	// I2S 
 	output 	mclk,
@@ -73,9 +74,9 @@ begin
 		serial_data_r_next = {64{1'b0}};
 
 		if (lr_clk_r == 1'b0) begin // Left channel going to right channel
-			serial_data_r_next[62:47] = DATA_IN;
+			serial_data_r_next[62:47] = DATA_IN_LEFT;
 		end else begin
-			serial_data_r_next[62:47] = /*16'h0000;*/ DATA_IN;
+			serial_data_r_next[62:47] = /*16'h0000;*/ DATA_IN_RIGHT;
 		end
 
 	end

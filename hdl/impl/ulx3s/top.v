@@ -28,7 +28,8 @@ module top (
 	/* vco pwm */
 	output	     gp23,
 
-	output       gn7
+	output       gn7,
+	output	     gn8
 );
 
 
@@ -215,31 +216,100 @@ begin
 end
 
 
-wire out_tick_d;
-wire signed [15:0] demod_out_d;
+// DPLL
+
+wire signed [15:0] sigout;
+wire digout;
+
+dpll dpll0 (
+
+    CLK,
+    RSTb,
+
+    up_down,
+
+    3'd1,       /* Multiply by 2 */
+    3'd0,       /* Divide by 1   */
+
+    sigout,
+    digout
+
+);
+
+assign gn8 = digout;
+
+// Mix down the stereo multiplex
+
+reg signed [15:0] sigout2;
+wire signed [31:0] stereo = sigout2 * demod_out_a;
+
+reg signed [15:0] stereo_r;
+reg signed [15:0] demod_left;
+reg signed [15:0] demod_right;
+
+reg tick_a;
+reg tick_b;
+
+always @(posedge CLK)
+begin
+	sigout2 <= sigout;
+	stereo_r <= stereo[31:16];
+	demod_left  <= demod_out_a + stereo_r;
+	demod_right <= demod_out_a - stereo_r;
+	tick_a <= out_tick;
+	tick_b <= tick_a;
+end
+
+wire out_tick_d_left;
+wire signed [15:0] demod_out_d_left;
 
 deemph d0 (
     CLK,
     RSTb,
-    demod_out_a,
-    out_tick,
-    demod_out_d,
-    out_tick_d
+    demod_left,
+    tick_b,
+    demod_out_d_left,
+    out_tick_d_left
 );
 
+wire out_tick_d_right;
+wire signed [15:0] demod_out_d_right;
 
-wire [15:0] demod_out;
-wire out_tickA;
+deemph d1 (
+    CLK,
+    RSTb,
+    demod_right,
+    tick_b,
+    demod_out_d_right,
+    out_tick_d_right
+);
+
+wire [15:0] left_audio;
+wire out_tickA_left;
 
 aud_cic cic2
 (
 	CLK,
 	RSTb,
-	out_tick_d,
-	demod_out_d,
+	out_tick_d_left,
+	demod_out_d_left,
 	8'h0,
-	demod_out,
-	out_tickA
+	left_audio,
+	out_tickA_left
+);
+
+wire [15:0] right_audio;
+wire out_tickA_right;
+
+aud_cic cic3
+(
+	CLK,
+	RSTb,
+	out_tick_d_right,
+	demod_out_d_right,
+	8'h0,
+	right_audio,
+	out_tickA_right
 );
 
 
@@ -257,7 +327,8 @@ audio aud0
 	pll_clk_25,	
 	RSTb,
 
-	demod_out,
+	left_audio,
+	right_audio,
 
 	mclk,
 	lr_clk,
@@ -297,9 +368,9 @@ am_demod am1
         CLK,
         RSTb,
 
-        demod_out,
-        demod_out,
-        out_tickA, 
+        left_audio,
+        right_audio,
+        out_tickA_left, 
 
         VU_out,
         vu_out_tick
